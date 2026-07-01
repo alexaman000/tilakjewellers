@@ -41,8 +41,9 @@ const support = [
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail]         = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [logoError, setLogoError]   = useState(false);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -104,15 +105,14 @@ export default function Footer() {
           <div className="lg:col-span-2">
             {/* Logo */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-14 h-14 rounded-full border-2 border-[#D4AF37]/50 overflow-hidden bg-[#111111] flex items-center justify-center">
-                <Image
-                  src="/logo.png"
-                  alt="Tilak Jewellers"
-                  fill
-                  className="object-cover"
-                  onError={() => {}}
-                />
-                <span className="font-playfair text-[#D4AF37] text-xl font-bold">TJ</span>
+              <div style={{ width: 56, height: 56, borderRadius: "50%", border: "2px solid rgba(212,175,55,0.5)", overflow: "hidden", background: "#111111", flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                {!logoError ? (
+                  <Image src="/logo.png" alt="Tilak Jewellers" width={56} height={56}
+                         style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                         onError={() => setLogoError(true)} />
+                ) : (
+                  <span className="font-playfair" style={{ color: "#D4AF37", fontSize: 20, fontWeight: 700 }}>TJ</span>
+                )}
               </div>
               <div>
                 <h2 className="font-playfair text-xl font-bold text-white">Tilak Jewellers</h2>

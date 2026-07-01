@@ -153,7 +153,7 @@ export default function CustomJewellery() {
                           name="weight"
                           type="text"
                           placeholder="e.g. 20 gm"
-                          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-[#D4AF37]/20 text-white outline-none focus:border-[#D4AF37] text-sm transition-all"
+                          className="w-full px-4 py-3 rounded-xl bg-black/40 border border-[#D4AF37]/30 text-white placeholder-gray-500 outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] text-sm transition-all"
                         />
                       </div>
                       <div>
@@ -164,7 +164,7 @@ export default function CustomJewellery() {
                           name="budget"
                           type="text"
                           placeholder="e.g. 50,000"
-                          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-[#D4AF37]/20 text-white outline-none focus:border-[#D4AF37] text-sm transition-all"
+                          className="w-full px-4 py-3 rounded-xl bg-black/40 border border-[#D4AF37]/30 text-white placeholder-gray-500 outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] text-sm transition-all"
                         />
                       </div>
                     </div>
@@ -179,7 +179,7 @@ export default function CustomJewellery() {
                         rows={3}
                         required
                         placeholder="e.g. I want a traditional necklace with ruby stones, 22K gold..."
-                        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-[#D4AF37]/20 text-white outline-none focus:border-[#D4AF37] text-sm transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-xl bg-black/40 border border-[#D4AF37]/30 text-white placeholder-gray-500 outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] text-sm transition-all resize-none"
                       />
                     </div>
 
